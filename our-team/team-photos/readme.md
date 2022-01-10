@@ -1,0 +1,13 @@
+Find the details of the team members for the internet access project group below: 
+
+Name: Naman Bansal 
+Bio: Naman is a graduate student at Harvard Graduate School of Education. He is an engineer turned educationist from India working to improve educational outcomes for the marginalized children in the remotest locations of the world.
+
+Name: Abdurrehman 
+Bio: Abdurrehman is currently a Master in Public Policy Candidate at the Harvard Kennedy School. He has worked in Strategy and Operations roles with governments in the UAE, Saudi Arabia, Oman and Pakistan. His areas of interest include energy, infrastructure, transport and State-Owned Enterprise reform. He now wants to leverage insights from data and behaviour sciences to improve developmental outcomes in emerging economies.
+
+Name: Siew Sanz Ng
+Bio: As a Master in Public Administration in International Development student at Harvard Kennedy School, Siew aims to work in the intersection of technology and policy by using data analytics to address pressing development issues. During her 5 years of work experience with Axiata, a telecommunications conglomerate, Siew complete various rotations across Axiata’s South Asia and Southeast Asia operating companies, focusing on using analytics in audit,finance, and fraud prevention. Most recently, as the Strategy Consultant of Axiata Digital Capital (ADC), Axiata’s digital micro-financing venture serving underserved nano, micro, small and medium sized enterprises, Siew led a funding exercise and supported ADC’s application for a digital banking license. Using technology for social justice, Siew has also developed a chatbot for migrant workers that serves as an information channel, data collection tool and multilingual reporting system for trafficking and forced labor incidents
+
+Name: Rohini Iyer
+Bio: 
