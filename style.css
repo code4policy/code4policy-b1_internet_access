@@ -80,28 +80,28 @@
 
 
 
-/* D3 Country Gaps Graph styling start here*/
+/*D3 Country Gaps Graph styling start here*/
 
-.axis path,
-.axis line {
+#graphic2 .axis path,
+#graphic2 .axis line {
   fill: none;
   stroke: #000;
   shape-rendering: crispEdges;
 }
 
-.bar {
+#graphic2 .bar {
   fill: orange;
 }
 
-.bar:hover {
+#graphic2 .bar:hover {
   fill: orangered ;
 }
 
-.x.axis path {
+#graphic2 .x.axis path {
   display: none;
 }
 
-.d3-tip {
+#graphic2 .d3-tip {
   line-height: 1;
   font-weight: bold;
   padding: 12px;
@@ -111,7 +111,7 @@
 }
 
 /* Creates a small triangle extender for the tooltip */
-.d3-tip:after {
+#graphic2 .d3-tip:after {
   box-sizing: border-box;
   display: inline;
   font-size: 10px;
@@ -124,10 +124,10 @@
 }
 
 /* Style northward tooltips differently */
-.d3-tip.n:after {
+#graphic2 .d3-tip.n:after {
   margin: -1px 0 0 0;
   top: 100%;
   left: 0;
 }
 
-/* D3 Country Gaps Graph styling end here*/
+/*D3 Country Gaps Graph styling end here*/
