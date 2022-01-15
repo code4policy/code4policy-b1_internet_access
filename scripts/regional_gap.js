@@ -23,7 +23,7 @@ var tip = d3.tip()
   .attr('class', 'd3-tip')
   .offset([-10, 0])
   .html(function(d) {
-    return "<strong>Frequency:</strong> <span style='color:red'>" + d.frequency + "</span>";
+    return "<strong>Gap:</strong> <span style='color:red'>" + d.gap + "</span>";
   })
 
 var svg = d3.select("body").append("svg")
@@ -35,8 +35,8 @@ var svg = d3.select("body").append("svg")
 svg.call(tip);
 
 d3.tsv("scripts/data.tsv", type, function(error, data) {
-  x.domain(data.map(function(d) { return d.letter; }));
-  y.domain([0, d3.max(data, function(d) { return d.frequency; })]);
+  x.domain(data.map(function(d) { return d.region; }));
+  y.domain([0, d3.max(data, function(d) { return d.gap; })]);
 
   svg.append("g")
       .attr("class", "x axis")
@@ -51,22 +51,22 @@ d3.tsv("scripts/data.tsv", type, function(error, data) {
       .attr("y", 6)
       .attr("dy", ".71em")
       .style("text-anchor", "end")
-      .text("Frequency");
+      .text("Gap");
 
   svg.selectAll(".bar")
       .data(data)
     .enter().append("rect")
       .attr("class", "bar")
-      .attr("x", function(d) { return x(d.letter); })
+      .attr("x", function(d) { return x(d.region); })
       .attr("width", x.rangeBand())
-      .attr("y", function(d) { return y(d.frequency); })
-      .attr("height", function(d) { return height - y(d.frequency); })
+      .attr("y", function(d) { return y(d.gap); })
+      .attr("height", function(d) { return height - y(d.gap); })
       .on('mouseover', tip.show)
       .on('mouseout', tip.hide)
 
 });
 
 function type(d) {
-  d.frequency = +d.frequency;
+  d.gap = +d.gap;
   return d;
 }
