@@ -51,7 +51,36 @@
   color: black;
 }
 
-/* D3 visualisation style */
+
+/*D3 Regional Gaps Graph styling starts here*/
+#graphic body {
+            font-family: "Arial", sans-serif;
+        }
+        
+#graphic .bar {
+            fill: #5f89ad;
+        }
+        
+#graphic .axis {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        
+#graphic .axis path,
+.axis line {
+            fill: none;
+            display: none;
+        }
+        
+#graphic .label {
+            font-size: 16px;
+        }
+
+/*D3 Regional Gaps Graph styling end here*/
+
+
+
+/* D3 Country Gaps Graph styling start here*/
 
 .axis path,
 .axis line {
@@ -100,3 +129,5 @@
   top: 100%;
   left: 0;
 }
+
+/* D3 Country Gaps Graph styling end here*/
