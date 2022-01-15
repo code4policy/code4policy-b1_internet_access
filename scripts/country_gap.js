@@ -1,12 +1,3 @@
-var margin = {top: 40, right: 20, bottom: 30, left: 40},
-    width = 960 - margin.left - margin.right,
-    height = 500 - margin.top - margin.bottom;
-
-var formatPercent = d3.format(".0%");
-
-var x = d3.scale.ordinal()
-    .rangeRoundBands([0, width], .1);
-
 var y = d3.scale.linear()
     .range([height, 0]);
 
@@ -34,8 +25,8 @@ var svg = d3.select("body").append("svg")
 
 svg.call(tip);
 
-d3.tsv("scripts/regional_gap.tsv", type, function(error, data) {
-  x.domain(data.map(function(d) { return d.region; }));
+d3.tsv("scripts/data.tsv", type, function(error, data) {
+  x.domain(data.map(function(d) { return d.country; }));
   y.domain([0, d3.max(data, function(d) { return d.gap; })]);
 
   svg.append("g")
@@ -57,7 +48,7 @@ d3.tsv("scripts/regional_gap.tsv", type, function(error, data) {
       .data(data)
     .enter().append("rect")
       .attr("class", "bar")
-      .attr("x", function(d) { return x(d.region); })
+      .attr("x", function(d) { return x(d.country); })
       .attr("width", x.rangeBand())
       .attr("y", function(d) { return y(d.gap); })
       .attr("height", function(d) { return height - y(d.gap); })
