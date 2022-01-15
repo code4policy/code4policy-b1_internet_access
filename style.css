@@ -135,6 +135,12 @@
 
 /*Recommendations page start here*/
 
+.row {
+    margin: auto;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
 .column1 {
     float: left;
     width: 25%;
