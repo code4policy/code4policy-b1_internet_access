@@ -131,3 +131,17 @@
 }
 
 /*D3 Country Gaps Graph styling end here*/
+
+
+/*Recommendations page start here*/
+
+.column1 {
+    float: left;
+    width: 25%;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+/*Recommendations page end here*/
