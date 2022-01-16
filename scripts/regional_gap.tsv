@@ -1,7 +1,7 @@
-region	gap
-East Asia & Pacific	.03
-Latin America & Caribbean	.02
-Europe & Central Asia	.04
-Middle East & North Africa	.17
-Sub-Saharan Africa	.37
-South Asia	.36
+name	value
+East Asia & Pacific	0.03
+Latin America & Caribbean	0.02
+Europe & Central Asia	0.04
+Middle East & North Africa	0.17
+Sub-Saharan Africa	0.37
+South Asia	0.36
