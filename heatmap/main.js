@@ -1,7 +1,7 @@
 // set the dimensions and margins of the graph
-var margin = {top: 100, right: 100, bottom: 100, left: 150},
-  width = 1300 - margin.left - margin.right,
-  height = 800 - margin.top - margin.bottom;
+var margin = {top: 100, right: 100, bottom: 100, left: 400},
+  width = 1200 - margin.left - margin.right,
+  height = 750 - margin.top - margin.bottom;
 
 // append the svg object to the body of the page
 var svg = d3.select("#my_dataviz")
@@ -25,7 +25,7 @@ d3.csv("heatmap.csv", function(data) {
     .domain(myGroups)
     .padding(0.05);
   svg.append("g")
-    .style("font-size", 15)
+    .style("font-size", 11)
     .attr("transform", "translate(0," + height + ")")
     .call(d3.axisBottom(x).tickSize(0))
     .select(".domain").remove()
@@ -36,7 +36,7 @@ d3.csv("heatmap.csv", function(data) {
     .domain(myVars)
     .padding(0.05);
   svg.append("g")
-    .style("font-size", 15)
+    .style("font-size", 11)
     .call(d3.axisLeft(y).tickSize(0))
     .select(".domain").remove()
 
@@ -46,15 +46,11 @@ d3.csv("heatmap.csv", function(data) {
     .domain([1, 20])
 
   // create a tooltip
-  var tooltip = d3.select("#my_dataviz")
+  var tooltip = d3.select("#my_dataviz_tooltip")
     .append("div")
-    .style("opacity", 0)
+    .style("position", "absolute")
     .attr("class", "tooltip")
     .style("background-color", "white")
-    .style("border", "solid")
-    .style("border-width", "2px")
-    .style("border-radius", "5px")
-    .style("padding", "5px")
 
   // Three function that change the tooltip when user hover / move / leave a cell
   var mouseover = function(d) {
@@ -66,9 +62,9 @@ d3.csv("heatmap.csv", function(data) {
   }
   var mousemove = function(d) {
     tooltip
-      .html("The exact value of<br>this cell is: " + d.value)
-      .style("left", (d3.mouse(this)[0]+70) + "px")
-      .style("top", (d3.mouse(this)[1]) + "px")
+      .html(+ d.value + "% users")
+      .style("left", (d3.mouse(this)[0]+300) + "px")
+      .style("top", (d3.mouse(this)[1]+100) + "px")
   }
   var mouseleave = function(d) {
     tooltip
@@ -114,4 +110,7 @@ svg.append("text")
         .style("font-size", "14px")
         .style("fill", "grey")
         .style("max-width", 400)
-        .text("A short description of the take-away message of this chart.");
+        .text("This chart displays percentage of mobile users who identified the following factors as the single most important barrier to using mobile internet. The countries chosen are those that have the the largest gender gaps in mobile internet access.");
+
+
+
