@@ -196,6 +196,13 @@
   padding-right: 250px;
 }
 
+#graph-commentary {
+  font-size: 15px;
+  text-align: left;
+  padding-left: 350px;
+  padding-right: 300px;
+}
+
 /*Graph styling ends here*/
 
 /*Footer bar styling starts here*/

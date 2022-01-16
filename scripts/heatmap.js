@@ -1,6 +1,6 @@
 // set the dimensions and margins of the graph
-var margin = {top: 1, right: 100, bottom: 100, left: 400},
-  width = 1200 - margin.left - margin.right,
+var margin = {top: 1, right: 100, bottom: 20, left: 400},
+  width = 1100 - margin.left - margin.right,
   height = 600 - margin.top - margin.bottom;
 
 // append the svg object to the body of the page
@@ -64,7 +64,7 @@ d3.csv("heatmap/heatmap.csv", function(data) {
     tooltip
       .html(+ d.value + "% users")
       .style("left", (d3.mouse(this)[0]+500) + "px")
-      .style("top", (d3.mouse(this)[1]+500) + "px")
+      .style("top", (d3.mouse(this)[1]+600) + "px")
   }
   var mouseleave = function(d) {
     tooltip
