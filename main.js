@@ -25,6 +25,7 @@ d3.tsv("scripts/regional_gap.tsv", function(error, data) {
 //                 "value": 36,
 //         }];
 
+
         //sort bars based on value
 data = data.sort(function (a, b) {
     return d3.ascending(a.value, b.value);
@@ -99,7 +100,7 @@ bars.append("text")
         return x(d.value) + 3;
 })
     .text(function (d) {
-        return d.value;
+        return d.value*100;
 });
 
 });
