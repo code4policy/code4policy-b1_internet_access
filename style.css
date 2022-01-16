@@ -94,7 +94,7 @@
 }
 
 #graphic2 .bar:hover {
-  fill: orangered ;
+  fill: #2596be ;
 }
 
 #graphic2 .x.axis path {
