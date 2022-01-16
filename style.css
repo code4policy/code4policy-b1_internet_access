@@ -7,6 +7,10 @@
 .color-style {
 	color: black;
 }
+
+.general-font {
+  font-size: 20px;
+}
  		
 .bg-img {
   /* The image used */
@@ -76,6 +80,11 @@
             font-size: 16px;
         }
 
+#graphic {
+          padding-left: 350px;
+          padding-right: 350px;
+}
+
 /*D3 Regional Gaps Graph styling end here*/
 
 
@@ -90,11 +99,11 @@
 }
 
 #graphic2 .bar {
-  fill: orange;
+  fill: #5f89ad;
 }
 
 #graphic2 .bar:hover {
-  fill: orangered ;
+  fill: #2596be ;
 }
 
 #graphic2 .x.axis path {
@@ -130,6 +139,11 @@
   left: 0;
 }
 
+#graphic2 {
+          padding-left: 350px;
+          padding-right: 350px;
+}
+
 /*D3 Country Gaps Graph styling end here*/
 
 
@@ -151,3 +165,38 @@
 }
 
 /*Recommendations page end here*/
+
+/*Graph styling starts here*/
+
+#graph-title {
+  font-size: 30px;
+  text-align: left;
+  padding-left: 350px;
+  padding-right: 350px;
+}
+
+#graph-subtitle {
+  font-size: 20px;
+  text-align: left;
+  padding-left: 350px;
+  padding-right: 350px;
+}
+
+/*Graph styling ends here*/
+
+/*Footer bar styling starts here*/
+.footerbar {
+    font-family: Georgia;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 100% !important;
+    text-align: center;
+    background-color: #007c7d !important;
+    color: white;
+    opacity: .7;
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    height: 55px;
+}
+/*Footer bar styling ends here*/

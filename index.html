@@ -16,16 +16,54 @@
                 </div>
             </div>
         </div>
-    
-        <h1> Data and Programming for Poliymakers</h1>
-         <h3> Internet access visualization</h3>   
-         <a href='gendergap.html'>Gender Differences in Mobile Ownership & Internet Usage</a>
         
          <br>
-         <br>
-         <br>
 
-         <!-- Adding share button for LinkedIn -->
+
+            <h1> The Internet Access Gender Gap </h1>
+
+            <p class = 'general-font'> Gender gaps exist in multiple dimensions. However, the gender gap in mobile internet access can have compounding effects on many dimensions.</p>
+
+            <p class = 'general-font'> Reducing the mobile internet access gender gap can improve gender access to </p>
+
+            <br>
+            <p class = 'general-font'> economic opportunities | education | environment | health | human security | public participation </p>
+
+            <br>            
+            <p class = 'general-font'> But first of all, which region suffers the highest gender gap in mobile internet access? <p/>
+         
+         <br>
+         <br>
+         
+        <meta charset="utf-8">
+ 
+        <body>
+
+        <script src="//d3js.org/d3.v3.min.js"></script>
+        <script src="//labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+        
+        <p id = 'graph-title'> <strong> There are stark disparities in mobile internet usage based on gender, especially in the Global South </strong> </p>
+
+        <p id = 'graph-subtitle'> Mobile internet gender gap by region (% difference in male and female usage) </p>
+        <div id='graphic'></div>
+        <script src="main.js"></script>
+
+        <br>
+        <p id = 'graph-title'> <strong> Gender gaps in mobile internet usages are pervasive in South Asia and Sub Saharan Africa </strong> </p>
+
+        <p id = 'graph-subtitle'> Countries with the highest gender gap in mobile internet usage globally </p>
+        <div id='graphic2'></div>
+        <script src="scripts/country_gap.js"></script>
+
+
+
+
+<!--         <div> <script src="scripts/regional_gap.js"></script> </div> -->
+         <a href='heatmap/index.html'> Heatmap of barriers to internet access for women </a>
+
+        <br>
+
+                  <!-- Adding share button for LinkedIn -->
          <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://code4policy.github.io/code4policy-b1_internet_access/" onclick="window.open(this.href, 'mywin','left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" >
          <img src="https://chillyfacts.com/wp-content/uploads/2017/06/LinkedIN.gif" alt="" width="77" height="28" /></a>
 
@@ -39,30 +77,10 @@
          <!-- Adding share button for Facebook -->
          <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fcode4policy.github.io%2Fcode4policy-b1_internet_access%2F&layout=button&size=large&width=77&height=28&appId" width="77" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
 
-         <br>
-         <br>
-         <br>
-         
-        <meta charset="utf-8">
- 
-        <body>
-        <script src="//d3js.org/d3.v3.min.js"></script>
-        <script src="//labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+         <div class="footerbar">
+        <h6>This webpage was developed by Harvard Kennedy School students for DPI-691M: Programming and Data for Policymakers.</h6>
 
-<!--         <div> <script src="scripts/regional_gap.js"></script> </div> -->
-
-        <div id='graphic'></div>
-        <script src="main.js"></script>
-
-        <div id='graphic2'></div>
-        <script src="scripts/country_gap.js"></script>
-
-         <h3>About Us</h3>
-         <a href='our-team/index.html'> Learn more about our team </a>
-
-         <br>
-
-         <a href='heatmap/index.html'> Heatmap of barriers to internet access for women </a>
+    </div>
 
     </body>
 
