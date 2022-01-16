@@ -1,31 +1,5 @@
 d3.tsv("scripts/regional_gap.tsv", function(error, data) {
 
-// var data = [{
-//                 "name": "East Asia & Pacific",
-//                 "value": 3,
-//         },
-//             {
-//                 "name": "Latin America & Caribbean",
-//                 "value": 2,
-//         },
-//             {
-//                 "name": "Europe & Central Asia",
-//                 "value": 4,
-//         },
-//             {
-//                 "name": "Middle East & North Africa",
-//                 "value": 17,
-//         },
-//             {
-//                 "name": "Sub-Saharan Africa",
-//                 "value": 37,
-//         },
-//             {
-//                 "name": "South Asia",
-//                 "value": 36,
-//         }];
-
-
         //sort bars based on value
 data = data.sort(function (a, b) {
     return d3.ascending(a.value, b.value);
