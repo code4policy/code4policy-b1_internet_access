@@ -1,7 +1,7 @@
 // set the dimensions and margins of the graph
-var margin = {top: 100, right: 100, bottom: 100, left: 400},
+var margin = {top: 1, right: 100, bottom: 100, left: 400},
   width = 1200 - margin.left - margin.right,
-  height = 750 - margin.top - margin.bottom;
+  height = 600 - margin.top - margin.bottom;
 
 // append the svg object to the body of the page
 var svg = d3.select("#my_dataviz")
@@ -13,7 +13,7 @@ var svg = d3.select("#my_dataviz")
         "translate(" + margin.left + "," + margin.top + ")");
 
 //Read the data
-d3.csv("heatmap.csv", function(data) {
+d3.csv("heatmap/heatmap.csv", function(data) {
 
   // Labels of row and columns -> unique identifier of the column called 'group' and 'variable'
   var myGroups = d3.map(data, function(d){return d.group;}).keys()
@@ -63,8 +63,8 @@ d3.csv("heatmap.csv", function(data) {
   var mousemove = function(d) {
     tooltip
       .html(+ d.value + "% users")
-      .style("left", (d3.mouse(this)[0]+300) + "px")
-      .style("top", (d3.mouse(this)[1]+100) + "px")
+      .style("left", (d3.mouse(this)[0]+500) + "px")
+      .style("top", (d3.mouse(this)[1]+500) + "px")
   }
   var mouseleave = function(d) {
     tooltip
@@ -93,24 +93,3 @@ d3.csv("heatmap.csv", function(data) {
     .on("mousemove", mousemove)
     .on("mouseleave", mouseleave)
 })
-
-// Add title to graph
-svg.append("text")
-        .attr("x", 0)
-        .attr("y", -50)
-        .attr("text-anchor", "left")
-        .style("font-size", "40px")
-        .text("Top barriers to mobile internet use");
-
-// Add subtitle to graph
-svg.append("text")
-        .attr("x", 0)
-        .attr("y", -20)
-        .attr("text-anchor", "left")
-        .style("font-size", "14px")
-        .style("fill", "grey")
-        .style("max-width", 400)
-        .text("This chart displays percentage of mobile users who identified the following factors as the single most important barrier to using mobile internet. The countries chosen are those that have the the largest gender gaps in mobile internet access.");
-
-
-
