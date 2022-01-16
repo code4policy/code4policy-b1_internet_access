@@ -207,7 +207,8 @@
 
 /*Footer bar styling starts here*/
 .footerbar {
-    font-family: Georgia;
+    font-family: Arial;
+    font-size: 18px;
     width: 100% !important;
     max-width: 100% !important;
     min-width: 100% !important;
@@ -216,8 +217,7 @@
     clear: both;
     color: white;
     opacity: .7;
-    padding-top: 2px;
-/*    position: absolute;*/
+    padding-top: 1px;
     z-index: 100;
     left: 0;
     height: 55px;
