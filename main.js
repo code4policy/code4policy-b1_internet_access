@@ -1,12 +1,4 @@
-// import csv
-
-// with open('scripts/regional_gap.tsv') as f:
-//     // var data = f.read()
-//     var reader = csv.DictReader(f)
-//     var data = list(reader)
-
-// d3.tsv("scripts/regional_gap.tsv", type, function(error, data)
-
+d3.tsv("scripts/regional_gap.tsv", function(error, data) {
 
 // var data = [{
 //                 "name": "East Asia & Pacific",
@@ -108,5 +100,7 @@ bars.append("text")
 })
     .text(function (d) {
         return d.value;
+});
+
 });
 
