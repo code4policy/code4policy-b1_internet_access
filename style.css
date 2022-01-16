@@ -7,6 +7,10 @@
 .color-style {
 	color: black;
 }
+
+.general-font {
+  font-size: 20px;
+}
  		
 .bg-img {
   /* The image used */
@@ -151,3 +155,21 @@
 }
 
 /*Recommendations page end here*/
+
+/*Graph styling starts here*/
+
+#graph-title {
+  font-size: 30px;
+  text-align: left;
+  padding-left: 350px;
+  padding-right: 350px;
+}
+
+#graph-subtitle {
+  font-size: 20px;
+  text-align: left;
+  padding-left: 350px;
+  padding-right: 350px;
+}
+
+/*Graph styling ends here*/
