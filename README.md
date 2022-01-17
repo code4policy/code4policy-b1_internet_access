@@ -27,16 +27,18 @@ All files related to the project have been organized in the following folders -
 2. barriers.html, recommendations.html, about-us.html - contains HTML code for other three webpages
 3. scripts - contains all the javascript codes
 4. styles - contains all CSS styling codes for the website
-5. assets - contains all the images used in the website
-6. our team - contains images and bios of team members displayed on the about us page
-7. archive - contains all old and redundant files
+5. data - contains all .csv files used for data analysis on D3 and Flourish
+6. assets - contains all the images used in the website
+7. our team - contains images and bios of team members displayed on the about us page
+8. archive - contains all old and redundant files
+9. readme.md - contains project documentation log
 
 #Process deliverables:
 1. Link to task boards - 
 	Sprint 1 - https://github.com/code4policy/code4policy-b1_internet_access/projects/2
 	Sprint 2 - https://github.com/code4policy/code4policy-b1_internet_access/projects/3
 2. Link to user stories - https://github.com/code4policy/code4policy-b1_internet_access/projects/1
-3. Link to burndown chart - https://docs.google.com/spreadsheets/d/17B0iQDIzLHwvcJ9cUUK_a8S7-UJovn5RyaWNtKN1swc/edit?usp=sharing
+3. Link to burndown charts - https://docs.google.com/spreadsheets/d/17B0iQDIzLHwvcJ9cUUK_a8S7-UJovn5RyaWNtKN1swc/edit?usp=sharing
 4. Final website link - https://code4policy.github.io/code4policy-b1_internet_access/
 
 
