@@ -30,17 +30,20 @@
 }
 
 /* Position the navbar container inside the image */
-.container {
+/*.container {
   position: absolute;
   margin: 320px;
   width: auto;
   padding-left: 160px;
-}
+}*/
 
 /* The navbar */
 .topnav {
   overflow: hidden;
   background-color: #333;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* Navbar links */
