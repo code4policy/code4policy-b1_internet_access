@@ -29,9 +29,8 @@ All files related to the project have been organized in the following folders -
 4. styles - contains all CSS styling codes for the website
 5. data - contains all .csv files used for data analysis on D3 and Flourish
 6. assets - contains all the images used in the website
-7. our team - contains images and bios of team members displayed on the about us page
-8. archive - contains all old and redundant files
-9. readme.md - contains project documentation log
+7. archive - contains all old and redundant files
+8. readme.md - contains project documentation log
 
 #Process deliverables:
 1. Link to task boards - 
