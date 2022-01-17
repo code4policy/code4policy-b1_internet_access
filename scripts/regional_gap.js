@@ -1,72 +1,81 @@
-var margin = {top: 40, right: 20, bottom: 30, left: 40},
-    width = 960 - margin.left - margin.right,
+d3.tsv("../data/regional_gap.tsv", function(error, data) {
+
+        //sort bars based on value
+data = data.sort(function (a, b) {
+    return d3.ascending(a.value, b.value);
+})
+
+        //set up svg using margin conventions - we'll need plenty of room on the left for labels
+var margin = {
+    top: 15,
+    right: 25,
+    bottom: 15,
+    left: 225
+};
+
+var width = 800 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
 
-var formatPercent = d3.format(".0%");
-
-var x = d3.scale.ordinal()
-    .rangeRoundBands([0, width], .1);
-
-var y = d3.scale.linear()
-    .range([height, 0]);
-
-var xAxis = d3.svg.axis()
-    .scale(x)
-    .orient("bottom");
-
-var yAxis = d3.svg.axis()
-    .scale(y)
-    .orient("left")
-    .tickFormat(formatPercent);
-
-var tip = d3.tip()
-  .attr('class', 'd3-tip')
-  .offset([-10, 0])
-  .html(function(d) {
-    return "<strong>Gap:</strong> <span style='color:red'>" + d.gap + "</span>";
-  })
-
-var svg = d3.select("body").append("svg")
+var svg = d3.select("#graphic").append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
-  .append("g")
+    .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-svg.call(tip);
+var x = d3.scale.linear()
+    .range([0, width])
+    .domain([0, d3.max(data, function (d) {
+        return d.value;
+})]);
 
-d3.tsv("../data/regional_gap.tsv", type, function(error, data) {
-  x.domain(data.map(function(d) { return d.region; }));
-  y.domain([0, d3.max(data, function(d) { return d.gap; })]);
+var y = d3.scale.ordinal()
+    .rangeRoundBands([height, 0], .1)
+    .domain(data.map(function (d) {
+        return d.name;
+}));
 
-  svg.append("g")
-      .attr("class", "x axis")
-      .attr("transform", "translate(0," + height + ")")
-      .call(xAxis);
+        //make y axis to show bar names
+var yAxis = d3.svg.axis()
+    .scale(y)
+            //no tick marks
+    .tickSize(0)
+    .orient("left");
 
-  svg.append("g")
-      .attr("class", "y axis")
-      .call(yAxis)
-    .append("text")
-      .attr("transform", "rotate(-90)")
-      .attr("y", 6)
-      .attr("dy", ".71em")
-      .style("text-anchor", "end")
-      .text("Gap");
+var gy = svg.append("g")
+    .attr("class", "y axis")
+    .call(yAxis)
 
-  svg.selectAll(".bar")
-      .data(data)
-    .enter().append("rect")
-      .attr("class", "bar")
-      .attr("x", function(d) { return x(d.region); })
-      .attr("width", x.rangeBand())
-      .attr("y", function(d) { return y(d.gap); })
-      .attr("height", function(d) { return height - y(d.gap); })
-      .on('mouseover', tip.show)
-      .on('mouseout', tip.hide)
+var bars = svg.selectAll(".bar")
+    .data(data)
+    .enter()
+    .append("g")
+
+        //append rects
+bars.append("rect")
+    .attr("class", "bar")
+    .attr("y", function (d) {
+        return y(d.name);
+})
+    .attr("height", y.rangeBand())
+    .attr("x", 0)
+    .attr("width", function (d) {
+        return x(d.value);
+});
+
+        //add a value label to the right of each bar
+bars.append("text")
+    .attr("class", "label")
+        //y position of the label is halfway down the bar
+    .attr("y", function (d) {
+        return y(d.name) + y.rangeBand() / 2 + 4;
+})
+            //x position is 3 pixels to the right of the bar
+    .attr("x", function (d) {
+        return x(d.value) + 3;
+})
+    .text(function (d) {
+        return d.value*100;
+});
 
 });
 
-function type(d) {
-  d.gap = +d.gap;
-  return d;
-}

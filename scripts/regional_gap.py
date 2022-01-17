@@ -1,4 +1,8 @@
+# Import csv library
+
 import csv
+
+# Open and write a new tsv through context manager
 
 with open('../data/regional_gap.tsv', 'w') as f:
     writer = csv.writer(f, delimiter='\t')
