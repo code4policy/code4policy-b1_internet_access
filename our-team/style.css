@@ -74,4 +74,21 @@
     font-size: 15px;
 }
 
-/*Recommendations page end here*/
+/*Footer bar styling starts here*/
+.footerbar {
+    font-family: Arial;
+    font-size: 18px;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 100% !important;
+    text-align: center;
+    background-color: #007c7d !important;
+    clear: both;
+    color: white;
+    opacity: .7;
+    padding-top: 1px;
+    z-index: 100;
+    left: 0;
+    height: 55px;
+}
+/*Footer bar styling ends here*/
