@@ -23,13 +23,13 @@ The .csv files were then used to create the D3 and Flourish visualizations and c
 
 #Folder structures:
 All files related to the project have been organized in the following folders -
-1. assets - contains all the images used in the website
-2. scripts - contains all the javascript codes
-3. our team - contains images and bios of team members displayed on the about us page
-4. index.html - contains HTML code for the landing page
-5. barriers.html, recommendations.html, about-us.html - contains HTML code for other three webpages
-6. style.css - contains all the styling for the website
-7. style_recommendations.css - contains styling for the recommendations page
+1. index.html - contains HTML code for the landing page
+2. barriers.html, recommendations.html, about-us.html - contains HTML code for other three webpages
+3. scripts - contains all the javascript codes
+4. styles - contains all CSS styling codes for the website
+5. assets - contains all the images used in the website
+6. our team - contains images and bios of team members displayed on the about us page
+7. archive - contains all old and redundant files
 
 #Process deliverables:
 1. Link to task boards - 
