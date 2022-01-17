@@ -32,6 +32,7 @@
   position: absolute;
   margin: 320px;
   width: auto;
+  padding-left: 75px;
 }
 
 /* The navbar */
@@ -146,25 +147,6 @@
 
 /*D3 Country Gaps Graph styling end here*/
 
-
-/*Recommendations page start here*/
-
-.row {
-    margin: auto;
-    padding-left: 40px;
-    padding-right: 40px;
-}
-
-.column1 {
-    float: left;
-    width: 25%;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 10px;
-    font-size: 20px;
-}
-
-/*Recommendations page end here*/
 
 /*Graph styling starts here*/
 
