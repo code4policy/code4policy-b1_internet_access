@@ -37,7 +37,7 @@ All files related to the project have been organized in the following folders -
 1. Link to task boards - 
 	Sprint 1 - https://github.com/code4policy/code4policy-b1_internet_access/projects/2
 	Sprint 2 - https://github.com/code4policy/code4policy-b1_internet_access/projects/3
-2. Link to user stories - https://github.com/code4policy/code4policy-b1_internet_access/projects/1
+2. Link to user stories/backlog - https://github.com/code4policy/code4policy-b1_internet_access/projects/1
 3. Link to burndown charts - https://docs.google.com/spreadsheets/d/17B0iQDIzLHwvcJ9cUUK_a8S7-UJovn5RyaWNtKN1swc/edit?usp=sharing
 4. Final website link - https://code4policy.github.io/code4policy-b1_internet_access/
 
