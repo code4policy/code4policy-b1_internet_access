@@ -13,7 +13,7 @@ var svg = d3.select("#my_dataviz")
         "translate(" + margin.left + "," + margin.top + ")");
 
 //Read the data
-d3.csv("../data/heatmap.csv", function(data) {
+d3.csv("data/heatmap.csv", function(data) {
 
   // Labels of row and columns -> unique identifier of the column called 'group' and 'variable'
   var myGroups = d3.map(data, function(d){return d.group;}).keys()
