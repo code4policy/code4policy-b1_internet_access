@@ -34,7 +34,7 @@ var svg = d3.select("body").append("svg")
 
 svg.call(tip);
 
-d3.tsv("scripts/regional_gap.tsv", type, function(error, data) {
+d3.tsv("../data/regional_gap.tsv", type, function(error, data) {
   x.domain(data.map(function(d) { return d.region; }));
   y.domain([0, d3.max(data, function(d) { return d.gap; })]);
 

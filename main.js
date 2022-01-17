@@ -1,4 +1,4 @@
-d3.tsv("scripts/regional_gap.tsv", function(error, data) {
+d3.tsv("../data/regional_gap.tsv", function(error, data) {
 
         //sort bars based on value
 data = data.sort(function (a, b) {
