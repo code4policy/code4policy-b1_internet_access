@@ -1,6 +1,10 @@
+# Import csv library
+
 import csv
 
-with open('country_gap.tsv', 'w') as f:
+# Open and write a new tsv through context manager
+
+with open('../data/country_gap.tsv', 'w') as f:
     writer = csv.writer(f, delimiter='\t')
     writer.writerow(['country', 'gap'])
     writer.writerow(['Algeria', '.08'])
