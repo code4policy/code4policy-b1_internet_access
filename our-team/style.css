@@ -75,6 +75,81 @@
     font-size: 15px;
 }
 
+.blankrow1 {
+    text-align: center;
+    width: 15%;
+    padding-left:15%;
+}
+
+.blankrow2 {
+    text-align: left;
+    width: 25%;
+    font-size:1em
+}
+
+.column-icon {
+    float: left;
+    width: 15%;
+    text-align: left;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    padding-left:8%;
+    font-size: 18px;
+}
+
+.column-icon-png {
+    width:160px;
+    height:160px;
+}
+
+.column-icon-png-naman {
+    width:220px;
+    height:160px;
+}
+.linkedin-logo {
+  text-align: right;
+  width: 50px;
+  height: 50px
+}
+
+.github-logo {
+  text-align: center;
+  width: 75px;
+  height: 45px
+}
+
+.column-text1 {
+    float: left;
+    width: 18%;
+    text-align: left;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    padding-left:7%;
+    font-size: 1em;
+}
+
+.column-text2 {
+    float: left;
+    width: 18%;
+    text-align: left;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    padding-left:5%;
+    font-size: 1em;
+}
+
+.blankrow1 {
+    text-align: center;
+    width: 15%;
+    padding-left:15%;
+}
+
+.blankrow2 {
+    text-align: left;
+    width: 25%;
+    font-size:1em
+}
+
 /*Footer bar styling starts here*/
 .footerbar {
     font-family: Arial;
