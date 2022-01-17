@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html id="html-style">
+    
     <head>
-        <title>Internet access gap by gender</title>
+        <title>The Gender Gap in Mobile Internet Access</title>
         <link href="styles/style.css" rel="stylesheet" type="text/css">
     </head>
+
     <body class="color-style">
 
         <div class="bg-img">
             <div class="container">
                 <div class="topnav">
-                    <a href="index.html">The Internet Access Gender Gap</a>
-                    <a href="barriers.html">Barriers to Mobile Internet</a>
+                    <a href="index.html">Internet Access Gender Gap</a>
+                    <a href="barriers.html">Barriers</a>
                     <a href="recommendations.html">Recommendations</a>
-                    <a href="our-team/about-us.html">About Us</a>
+                    <a href="about-us.html">About Us</a>
                 </div>
             </div>
         </div>
 
-<!-- Load d3.js -->
-<br>
-<br>
+        <!-- Adding d3 chart to show factors contributing to country gender gaps -->
 
         <br>
         <p id = 'graph-title2'> <strong> A multiplicity of factors impede mobile internet adoption by women in the global South </strong> </p>
@@ -27,12 +27,12 @@
         <p id = 'graph-subtitle2'> This chart displays the percentage of mobile users who identified the following factors as the most important barrier to using mobile internet. The selected countries have the largest gender gaps in mobile internet access. </p>
 
         <!-- Create a div where the graph will take place -->
+        
         <div id="my_dataviz_tooltip"></div>
         <div id="my_dataviz"></div>
 
-        <p id = 'graph-commentary'> Cost of mobile phones, literacy (reading/writing difficulties), and lack of understanding about how to use mobile internet stand out as the three primary barriers to mobile internet access and usage among women in most of the developing countries listed above. This also indicates that while women might be increasingly owning and using mobile phones, phones that can enable internet access i.e. smartphones, still remain unavailable to a large section of women across the globe. Literacy levels of women also seem to be impacting their ability to use internet on their mobile phones, despite being aware that such facilities exist. </p>
-
         <!-- Load color palettes -->
+        
         <script src="https://d3js.org/d3.v4.js"></script>
 
         <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
@@ -44,6 +44,12 @@
         
         <a href="data/heatmap.csv" download="">Get the data |</a>
         Created with <a href="https://www.d3-graph-gallery.com/graph/heatmap_style.html">d3</a></p>
+
+        <br>
+
+         <p id = 'graph-subtitle2' > Cost of mobile phones, literacy (reading/writing difficulties), and lack of understanding about how to use mobile internet stand out as the three primary barriers to mobile internet access and usage among women in most of the developing countries listed above. This also indicates that while women might be increasingly owning and using mobile phones, phones that can enable internet access i.e. smartphones, still remain unavailable to a large section of women across the globe. Literacy levels of women also seem to be impacting their ability to use internet on their mobile phones, despite being aware that such facilities exist. </p>
+
+         <br>
 
         <div class="footerbar">
         <h6>This webpage was developed by Harvard Graduate School of Education and Harvard Kennedy School students for DPI-691M: Programming and Data for Policymakers.</h6>

@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html id="html-style">
+    
     <head>
-        <title>Internet access gap by gender</title>
+        <title>The Gender Gap in Mobile Internet Access</title>
         <link href="styles/style.css" rel="stylesheet" type="text/css">
     </head>
+    
     <body class="color-style">
 
         <div class="bg-img">
@@ -12,7 +14,7 @@
                     <a href="index.html">Internet Access Gender Gap</a>
                     <a href="barriers.html">Barriers</a>
                     <a href="recommendations.html">Recommendations</a>
-                    <a href="our-team/about-us.html">About Us</a>
+                    <a href="about-us.html">About Us</a>
                 </div>
             </div>
         </div>
@@ -20,7 +22,7 @@
          <br>
 
 
-            <h1> The Internet Access Gender Gap </h1>
+            <h1> The Gender Gap in Mobile Internet Access </h1>
 
             <p class = 'general-font'> The gender disparity in mobile internet access is a pressing issue that impacts the life outcomes for women in the Global South on multiple dimensions. Given the lack of technical and fiscal capacity available to governments in these developing countries, the international donor community needs to develop and finance programmatic interventions that reduce the disparities in mobile internet access for women. Reducing the mobile internet access gender gap can improve gender access to:</p>
 
@@ -32,14 +34,14 @@
          
          <br>
          <br>
-         
-        <meta charset="utf-8">
- 
-        <body>
+
+        <!-- Intializing d3 library  -->
 
         <script src="//d3js.org/d3.v3.min.js"></script>
         <script src="//labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
         
+        <!-- Adding d3 chart to show regional gender gaps -->
+
         <p id = 'graph-title'> <strong> There are stark disparities in mobile internet usage based on gender, especially in the Global South </strong> </p>
 
         <p id = 'graph-subtitle'> Mobile internet gender gap by region (% difference in male and female usage) </p>
@@ -52,7 +54,10 @@
         <a href="data/regional_gap.tsv" download="">Get the data |</a>
         Created with <a href="https://bl.ocks.org/mbostock/3902569">d3</a></p>
 
+        <!-- Adding d3 chart to show country gender gaps -->
+
         <br>
+        
         <p id = 'graph-title'> <strong> Gender gaps in mobile internet usages are pervasive in South Asia and Sub Saharan Africa </strong> </p>
 
         <p id = 'graph-subtitle'> Countries with the highest gender gap in mobile internet usage globally </p>
@@ -71,6 +76,7 @@
         <p id = 'graph-subtitle'> Change in levels of gender gap in mobile internet usage for developing regions </p>
 
         <!-- Adding Flourish chart to show gender gap trends -->
+
         <div class="flourish-embed flourish-slope" data-src="visualisation/8411424"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
 
         <p class="graphnote">Source: 
