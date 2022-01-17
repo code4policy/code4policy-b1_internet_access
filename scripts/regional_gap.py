@@ -1,6 +1,10 @@
+# Import csv library
+
 import csv
 
-with open('regional_gap.tsv', 'w') as f:
+# Open and write a new tsv through context manager
+
+with open('../data/regional_gap.tsv', 'w') as f:
     writer = csv.writer(f, delimiter='\t')
     writer.writerow(['region', 'gap'])
     writer.writerow(['East Asia & Pacific', '.03'])
